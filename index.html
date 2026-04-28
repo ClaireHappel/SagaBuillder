@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saga Builder</title>
+</head>
+<style>
+ /* All the style for our page */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+#game-container {
+  width: 100%; 
+  max-width: 840px; 
+  aspect-ratio: 840 / 450; 
+  max-height: 600px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  background-image: url("https://i.postimg.cc/vHSGSVJC/Gemini-Generated-Image-sk342esk342esk34.png");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  container-type: inline-size;
+/*   min-height: 350px;  */
+  margin-bottom: 760px;
+}
+
+h1 {
+  position: absolute;
+  top: 40%;
+  left: 47%; 
+  transform: translateX(-50%);
+  color: #ffffff;
+  padding: 1% 2.5%;
+  font-size: 5cqi; 
+  text-shadow: -1px -1px 4px #000, 1px -1px 5px #000, -1px 1px 4px #000, 5px 1px 0 #000;
+  margin: 0;
+  white-space: nowrap; 
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#generateBtn {
+  position: absolute;
+  top: 57%;
+   left: 47%; 
+  transform: translateX(-50%);
+  color: #ffffff;
+  background-color: #30b61ee5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-shadow: -1px -1px 0 #791b14, 1px -1px 0 #692929, -1px 1px 0 #692929, 1px 1px 0 #692929;
+  box-shadow: inset 0 0 60px rgba(9, 194, 9, 0.8);
+  border: 1px solid #4e1e1e9a;
+  border-radius: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+  align-items: center;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sagaOutput {
+  background-image: url("https://i.postimg.cc/y6QnbmPR/papyrus.jpg");
+  position: absolute;
+  top: 70%;
+  left: 8.33%;
+  color: #160505;
+  text-wrap: balance;
+  max-width: 80%;
+  font-size: 2.5cqi;
+  font-weight: 100;
+  letter-spacing: 1px;
+  background-color: #C9B68D;
+  border: 1px solid #855b1d;
+  border-radius: 15px;
+  padding: 1% 1.5%;
+}
+</style>
+<body>
+    <div id="game-container">
+        <h1 style="font-size: 40px;">Saga Creator</h1>
+        <button id="generateBtn">Tell me a Story!</button>
+        <div id="sagaOutput" style="margin-top: 20px; font-style: italic;"></div>
+    </div>
+    <script src="Saga.js"></script>
+</body>
+</html>
